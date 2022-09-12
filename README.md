@@ -28,10 +28,6 @@ Get a free API key from [https://www.prowlapp.com/](https://www.prowlapp.com/) a
 ### Configuration
 
   - Put the sender of the daytripper in `CUSTOM COMMAND` mode by setting the selecter to `CSTM` as seen [here](https://github.com/dekuNukem/daytripper/blob/master/resources/photos/rxback.jpg)
-  - Put the line below in `sendprowl.sh` somewhere to be referenced by `listen.sh` and make sure it can find the API file
-```
-perl ./prowl.pl -apikeyfile=prowl_key.txt -event="DayTripper" -notification="TRIGGERED at $(date +"%Y-%m-%d %T")"
-```
   - Download, compile and install logkeys
   ```
 git clone https://github.com/kernc/logkeys.git
@@ -39,6 +35,12 @@ cd logkeys-master  && ./autogen.sh  && cd build  && ../configure && make && sudo
 ```
 ## Running
 
+#### Make sure a destination is set i.e. API key and wrapper
+
+Put the line below in `sendprowl.sh` and make sure it can find the API file `prowl_key.txt`
+```
+perl ./prowl.pl -apikeyfile=prowl_key.txt -event="DayTripper" -notification="TRIGGERED at $(date +"%Y-%m-%d %T")"
+```
 #### Run the keylogger
 
 Run the keylogger on the right detected virtual keyboard with `logairkeys.sh` containing:
