@@ -14,16 +14,14 @@ Use a `DayTripper` to detect movement and send a Growl notification to your phon
 
 ### Prerequisites
 
-Get all the required packages and software
-
+  - Get a Raspberry Pi or dedicated computer and plug in the receiver USB controller / HID device side of the DayTripper
+  - Get all the required packages and software:
 ```
 sudo apt-get -y install build-essential autotools-dev autoconf kbd curl python-pip
 pip install https://github.com/joh/when-changed/archive/master.zip
 curl -o /usr/local/bin/prowl.pl  https://www.prowlapp.com/static/prowl.pl
 ```
-### API Key
-
-Get a free API key from [https://www.prowlapp.com/](https://www.prowlapp.com/) and put the API key in `prowl_key.txt`.
+  - Get a free API key from [https://www.prowlapp.com/](https://www.prowlapp.com/) and put the API key in `prowl_key.txt`.
 
 ### Configuration
 
