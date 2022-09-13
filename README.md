@@ -1,7 +1,7 @@
 # DayTripper To Phone Alerting
 
 ## What
-Use a `DayTripper` to detect movement and send a Growl notification to your phone/watch/anywhere. What is `DayTripper`?  Read: [https://github.com/dekuNukem/daytripper](https://github.com/dekuNukem/daytripper)
+Use a `DayTripper` to detect movement and send a Growl notification to your phone/watch/anywhere. What is `DayTripper`?  A board made by @dekuNukem for more info read: [https://github.com/dekuNukem/daytripper](https://github.com/dekuNukem/daytripper)
 
 ## How does this work
   - We use a keylogger to look at just the keystrokes of just our HID device on a dedicated computer e.g. Raspberry Pi.
